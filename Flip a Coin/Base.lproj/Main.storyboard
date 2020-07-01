@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Flip_a_Coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="etu-UH-5d0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="NsR-GC-qh6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin1" translatesAutoresizingMaskIntoConstraints="NO" id="7UG-h7-QEV">
+                                <rect key="frame" x="97.666666666666686" y="104" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="Vsp-Wp-7O5">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="180"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="312" id="usJ-2J-Obj">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="180"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MU-Nm-56F">
+                                <rect key="frame" x="98" y="388" width="179" height="127"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="96"/>
+                                <state key="normal" title="FLIP">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ed-T7-Bdw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oaf-7N-gJN">
+                                <rect key="frame" x="145" y="324" width="85" height="34"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CardonaApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrf-Qx-vaO">
+                                <rect key="frame" x="139.66666666666666" y="744" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NsR-GC-qh6" firstAttribute="top" secondItem="etu-UH-5d0" secondAttribute="top" id="7Kk-dl-VdY"/>
+                            <constraint firstItem="0MU-Nm-56F" firstAttribute="centerX" secondItem="etu-UH-5d0" secondAttribute="centerX" id="7Su-LI-mwh"/>
+                            <constraint firstAttribute="bottom" secondItem="NsR-GC-qh6" secondAttribute="bottom" id="Aeg-Ri-ydS"/>
+                            <constraint firstItem="Oaf-7N-gJN" firstAttribute="centerX" secondItem="etu-UH-5d0" secondAttribute="centerX" id="EJN-iH-fMc"/>
+                            <constraint firstItem="NsR-GC-qh6" firstAttribute="leading" secondItem="etu-UH-5d0" secondAttribute="leading" id="Eoz-fJ-IGu"/>
+                            <constraint firstItem="hrf-Qx-vaO" firstAttribute="centerX" secondItem="etu-UH-5d0" secondAttribute="centerX" id="J7j-Dc-Jyf"/>
+                            <constraint firstItem="Oaf-7N-gJN" firstAttribute="top" secondItem="7UG-h7-QEV" secondAttribute="bottom" constant="40" id="NdI-fE-qhb"/>
+                            <constraint firstItem="ZhY-UN-cFJ" firstAttribute="bottom" secondItem="hrf-Qx-vaO" secondAttribute="bottom" constant="13" id="ZE6-bH-4AY"/>
+                            <constraint firstItem="7UG-h7-QEV" firstAttribute="top" secondItem="ZhY-UN-cFJ" secondAttribute="top" constant="60" id="a5z-Dq-z83"/>
+                            <constraint firstItem="0MU-Nm-56F" firstAttribute="top" secondItem="Oaf-7N-gJN" secondAttribute="bottom" constant="120" id="s6U-n7-CmU">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="NsR-GC-qh6" secondAttribute="trailing" id="sqk-9m-NwG"/>
+                            <constraint firstItem="7UG-h7-QEV" firstAttribute="centerX" secondItem="etu-UH-5d0" secondAttribute="centerX" id="tSf-Jr-z2T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZhY-UN-cFJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="coinImageView" destination="7UG-h7-QEV" id="b6d-3g-zBr"/>
+                        <outlet property="headTailLabel" destination="Oaf-7N-gJN" id="lyk-F4-Yay"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="coin1" width="636" height="643"/>
+    </resources>
+</document>
